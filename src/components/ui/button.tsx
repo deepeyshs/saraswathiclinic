@@ -10,6 +10,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+        clinic:
+          "bg-primary text-primary-foreground shadow-clinic hover:bg-primary/90 hover:-translate-y-0.5",
+        clinicOutline:
+          "border border-primary/20 bg-background text-primary shadow-sm hover:bg-accent hover:-translate-y-0.5",
+        clinicLight:
+          "bg-primary-foreground text-primary shadow-clinic hover:bg-primary-foreground/90 hover:-translate-y-0.5",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
@@ -22,6 +28,7 @@ const buttonVariants = cva(
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",
+        clinic: "h-13 rounded-lg px-6 text-base font-semibold",
       },
     },
     defaultVariants: {
