@@ -199,8 +199,11 @@ function ClinicPage() {
         <section aria-label="Clinic highlights" className="border-b border-border bg-background">
           <div className="section-shell grid grid-cols-2 divide-x divide-y divide-border lg:grid-cols-4 lg:divide-y-0">
             {[
-              [Star, "4.8/5", "Google Rating"], [Stethoscope, "Family", "Medical Care"], [MapPin, "Hennur", "Convenient Location"], [Clock3, "Until 9 PM", "Current Listing"],
-            ].map(([Icon, strong, text]) => <div key={String(strong)} className="flex items-center gap-3 px-3 py-5 sm:px-6"><Icon className="size-5 shrink-0 text-primary" /><div><p className="font-display text-sm font-bold text-clinic-deep sm:text-base">{strong as string}</p><p className="text-xs text-muted-foreground sm:text-sm">{text as string}</p></div></div>)}
+              { icon: Star, strong: "4.8/5", text: "Google Rating" },
+              { icon: Stethoscope, strong: "Family", text: "Medical Care" },
+              { icon: MapPin, strong: "Hennur", text: "Convenient Location" },
+              { icon: Clock3, strong: "Until 9 PM", text: "Current Listing" },
+            ].map(({ icon: Icon, strong, text }) => <div key={strong} className="flex items-center gap-3 px-3 py-5 sm:px-6"><Icon className="size-5 shrink-0 text-primary" /><div><p className="font-display text-sm font-bold text-clinic-deep sm:text-base">{strong}</p><p className="text-xs text-muted-foreground sm:text-sm">{text}</p></div></div>)}
           </div>
         </section>
 
