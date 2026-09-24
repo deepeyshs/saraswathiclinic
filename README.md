@@ -27,3 +27,7 @@ npm run dev
 - TypeScript
 - React
 - Tailwind CSS
+
+## Deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for hosting steps and environment variables.
